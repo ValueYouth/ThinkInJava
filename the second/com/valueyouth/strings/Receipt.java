@@ -14,6 +14,17 @@ import java.util.Formatter;
  *           第一个15表示这个字符串这个字符串的最小宽度是15
  *           第二个15表示，超出15后，不再显示。
  *           例如“Three Bears Porridge”打印出来后，显示是：Three Bears Por
+ *        4. 格式化说明符抽象语法：
+ *           %[argument_index$][flags][width][.precision]conversion
+ *
+ *           width: 控制一个域的最小尺寸。
+ *
+ *           precision（精确度，准确性）：指明一个域的最大尺寸。不是所有类型的数据
+ *           都能用precision。
+ *           （1）. 用于String，表示输出字符的最大数量。（例子见第三点）
+ *           （2）. 用于浮点数时，表示小数部分显示出来的位数（默认是6位小数）小数过
+ *                  多则舍入，过少在尾部补零。（例子见第二点）
+ *           （3）. 对整数应用precision，会触发异常。
  *
  */
 public class Receipt
