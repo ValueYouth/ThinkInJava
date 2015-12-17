@@ -19,9 +19,6 @@ public class Conversion
         f.format("b: %b\n", u) ; // 输出：b: true
         f.format("h: %h\n", u) ; // 散列码，输出：h: 61
 //        f.format("d: %d\n", u) ; // 异常：IllegalFormatConversionException
-//        f.format("f: %f\n", u) ; // 异常：IllegalFormatConversionException
-//        f.format("e: %e\n", u) ; // 异常：IllegalFormatConversionException
-//        f.format("x: %x\n", u) ; // 异常：IllegalFormatConversionException
 
         int v = 121 ;
         System.out.println("v = 121") ;
